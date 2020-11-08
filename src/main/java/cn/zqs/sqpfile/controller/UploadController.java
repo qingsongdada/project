@@ -18,6 +18,7 @@ public class UploadController {
     public ResultCommon upload(@RequestPart("files") MultipartFile[] files){
         for (MultipartFile file : files) {
             System.out.println(file.getOriginalFilename());
+            System.out.println("hello");
         }
         return uploadService.upload(files);
     }
