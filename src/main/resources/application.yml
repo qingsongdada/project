@@ -1,0 +1,23 @@
+server:
+  port: 7111
+
+eureka:
+  instance:
+    hostname: oss1
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  application:
+    name: oss
+
+aliyun:
+  oss:
+    file:
+      bucketname: java1001
+      endpoint: oss-cn-shanghai.aliyuncs.com
+      keyid: LTAI4G7b74eqcSqhMcF6Lju4
+      keysecret: yvnvcMrjkaIEqSOEvGpRKbentR8lzc
+
